@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Has_Actor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Has_Actor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Has_Author -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Has_Author">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Movie"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Review"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Writer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Has_Director -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Has_Director">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Director"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Has_Genre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Has_Genre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Has_Review -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Has_Review">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Review"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Publication_Date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Publication_Date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Release_Date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Release_Date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Review_Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Review_Type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Movie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Movie"/>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Review -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Review"/>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Writer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Writer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Amy_Poehler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Amy_Poehler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Actor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Bill_Clark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Bill_Clark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Writer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Christy_Lemire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Christy_Lemire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Writer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Comedy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Comedy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Dianne_Wiest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Dianne_Wiest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Actor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Review"/>
+        <untitled-ontology-2:Has_Author rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Peter_Bradshaw"/>
+        <untitled-ontology-2:Publication_Date>December 10, 2015</untitled-ontology-2:Publication_Date>
+        <untitled-ontology-2:Review_Type>Positive</untitled-ontology-2:Review_Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Review"/>
+        <untitled-ontology-2:Has_Author rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Joe_The_Movie_Man"/>
+        <untitled-ontology-2:Review_Type>Negative</untitled-ontology-2:Review_Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Review"/>
+        <untitled-ontology-2:Has_Author rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Christy_Lemire"/>
+        <untitled-ontology-2:Publication_Date>December 18, 2015</untitled-ontology-2:Publication_Date>
+        <untitled-ontology-2:Review_Type>Positive</untitled-ontology-2:Review_Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Review"/>
+        <untitled-ontology-2:Has_Author rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#MaryAnn_Johanson"/>
+        <untitled-ontology-2:Publication_Date>December 15, 2015</untitled-ontology-2:Publication_Date>
+        <untitled-ontology-2:Review_Type>Positive</untitled-ontology-2:Review_Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Review"/>
+        <untitled-ontology-2:Has_Author rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Bill_Clark"/>
+        <untitled-ontology-2:Publication_Date>December 18, 2015</untitled-ontology-2:Publication_Date>
+        <untitled-ontology-2:Review_Type>Positive</untitled-ontology-2:Review_Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Review"/>
+        <untitled-ontology-2:Has_Author rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Jason_King"/>
+        <untitled-ontology-2:Publication_Date>January 6, 2016</untitled-ontology-2:Publication_Date>
+        <untitled-ontology-2:Review_Type>Positive</untitled-ontology-2:Review_Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Review"/>
+        <untitled-ontology-2:Has_Author rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Eric_Hillis"/>
+        <untitled-ontology-2:Review_Type>Negative</untitled-ontology-2:Review_Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Review"/>
+        <untitled-ontology-2:Has_Author rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Ryan_Izay"/>
+        <untitled-ontology-2:Review_Type>Negative</untitled-ontology-2:Review_Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Review"/>
+        <untitled-ontology-2:Has_Author rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Doug_Fisher"/>
+        <untitled-ontology-2:Publication_Date>April 25, 2016</untitled-ontology-2:Publication_Date>
+        <untitled-ontology-2:Review_Type>Negative</untitled-ontology-2:Review_Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Review"/>
+        <untitled-ontology-2:Has_Author rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Mark_Olsen"/>
+        <untitled-ontology-2:Publication_Date>December 17, 2015</untitled-ontology-2:Publication_Date>
+        <untitled-ontology-2:Review_Type>Negative</untitled-ontology-2:Review_Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Doug_Fisher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Doug_Fisher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Writer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Eric_Hillis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Eric_Hillis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Writer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Ike_Barinholtz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Ike_Barinholtz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Actor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#James_Brolin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#James_Brolin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Actor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Jason_King -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Jason_King">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Writer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Jason_Moore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Jason_Moore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Director"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Joe_The_Movie_Man -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Joe_The_Movie_Man">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Writer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#John_Cena -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#John_Cena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Actor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#John_Leguizamo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#John_Leguizamo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Actor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Mark_Olsen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Mark_Olsen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Writer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#MaryAnn_Johanson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#MaryAnn_Johanson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Writer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Maya_Rudolph -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Maya_Rudolph">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Actor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Paula_Pell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Paula_Pell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Writer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Peter_Bradshaw -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Peter_Bradshaw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Writer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Ryan_Izay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Ryan_Izay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Writer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Sisters -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Sisters">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Movie"/>
+        <untitled-ontology-2:Has_Actor rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Amy_Poehler"/>
+        <untitled-ontology-2:Has_Actor rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Dianne_Wiest"/>
+        <untitled-ontology-2:Has_Actor rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Ike_Barinholtz"/>
+        <untitled-ontology-2:Has_Actor rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#James_Brolin"/>
+        <untitled-ontology-2:Has_Actor rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#John_Cena"/>
+        <untitled-ontology-2:Has_Actor rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#John_Leguizamo"/>
+        <untitled-ontology-2:Has_Actor rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Maya_Rudolph"/>
+        <untitled-ontology-2:Has_Actor rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Tina_Fey"/>
+        <untitled-ontology-2:Has_Author rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Paula_Pell"/>
+        <untitled-ontology-2:Has_Director rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Jason_Moore"/>
+        <untitled-ontology-2:Has_Genre rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Comedy"/>
+        <untitled-ontology-2:Has_Review rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_1"/>
+        <untitled-ontology-2:Has_Review rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_10"/>
+        <untitled-ontology-2:Has_Review rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_2"/>
+        <untitled-ontology-2:Has_Review rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_3"/>
+        <untitled-ontology-2:Has_Review rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_4"/>
+        <untitled-ontology-2:Has_Review rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_5"/>
+        <untitled-ontology-2:Has_Review rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_6"/>
+        <untitled-ontology-2:Has_Review rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_7"/>
+        <untitled-ontology-2:Has_Review rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_8"/>
+        <untitled-ontology-2:Has_Review rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Document_9"/>
+        <untitled-ontology-2:Release_Date>December 18, 2015</untitled-ontology-2:Release_Date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Tina_Fey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Tina_Fey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steve/ontologies/2023/6/untitled-ontology-2#Actor"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
